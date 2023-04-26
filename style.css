@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #4b0081;
+    color: #fff;
+    padding: 10px;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+header nav li a {
+  font-family: Poppins;
+  font-size: 21px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav li a:hover {
+  color: #dddddd;
+  text-decoration: underline;
+}
+
+header h1 {
+  text-transform: uppercase;
+}
+
+.sobre_a_loja {
+    display: flex;
+    margin-top: 50px;
+}
+
+.sobre_a_loja img {
+    height: 285px;
+}
+
+.sobre {
+  margin-left: 50px;
+}
+
+.sobre_a_loja h2 {
+  color: #4b0081;
+}
+
+.divisao {
+  margin-top: 15px;
+  height: 3px;
+  width: 100%;
+  background-color: #4b0081;
+  margin-bottom: 30px;
+}
+
+.sobre_a_loja p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: Poppins;
+}
+
+.produtos {
+  margin-top: 50px;
+}
+
+.produtos h2 {
+  color: #4b0081;
+}
+
+.container-flex {
+  display: flex;
+}
+
+.lista-produtos li {
+  list-style: none;
+  max-width: 30%;
+}
+
+.lista-produtos h3 {
+  margin: 16px 0;
+}
+
+.lista-produtos img {
+  height: 200px;
+  max-width: 100%;
+}
+
+.lista-produtos button {
+  width: 90%;
+  background-color: #4b0081;
+  color: #fff;
+  padding: 8px;
+  font-size: 15px;
+  border: none;
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.lista-produtos button:hover {
+  transition: .4s;
+  background-color: #4b008100;
+  color: #4b0081;
+  border: 1px solid #4b0081;
+}
+
+.lista-produtos {
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.price del {
+  color: #929292;
+}
+
+.price {
+  margin-top: 5px;
+}
+
+footer {
+  font-family: Poppins;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #4b0081;
+  color: #fff;
+  padding: 15px;
+}
+
+footer p {
+  display: inline;
+  font-family: Poppins;
+  margin-left: 190px;
+  font-size: 18px
+}
+
+.p2 {
+  margin-left: 190px;
+  display: inline;
+}
+
+.p2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.p2 a:hover {
+  text-decoration: underline;
+  color: #ccc;
+}
+
+
+/* VISÃO NO TABLET - COMEÇO */
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+header h1 {
+  font-size: 40px;
+}
+
+header .container li a {
+  font-size: 28px;
+}
+
+.container {
+  max-width: 1023px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.sobre_a_loja {
+  display: block;
+  margin-top: 50px;
+}
+
+.sobre_a_loja img {
+  height: 550px;
+}
+
+.sobre {
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.sobre_a_loja h2 {
+  font-size: 35px;
+  color: #4b0081;
+}
+
+.sobre_a_loja p {
+  font-size: 20px;
+}
+
+.produtos h2 {
+  font-size: 35px;
+  color: #4b0081;
+}
+
+footer {
+  align-items: center;
+  margin-top: 100px;
+  background-color: #4b0081;
+  color: #fff;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0 auto;
+  font-family: Poppins;
+  font-size: 18px
+}
+
+.p2 {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.lista-produtos li {
+  max-width: 50%;
+}
+
+.lista-produtos p {
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.price {
+  font-size: 20px;
+}
+
+.lista-produtos h3 {
+  font-size: 28px;
+}
+
+
+.lista-produtos img {
+  margin-top: 40px;
+  height: 300px;
+  max-width: 100%;
+}
+
+.lista-produtos {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.lista-produtos button {
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 0;
+  width: 94%;
+}
+
+}
+/* VISÃO NO TABLET - FIM */
+
+
+/* VISÃO MOBILE - COMEÇO */
+@media screen and (max-width: 640px) {
+
+header h1 {
+  font-size: 20px;
+}
+
+header .container li a {
+  font-size: 14px;
+}  
+
+.container {
+  max-width: 640px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.sobre_a_loja {
+  display: block;
+  margin-top: 50px;
+}
+
+.sobre_a_loja img {
+  height: 253px;
+}
+
+.sobre {
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.sobre_a_loja h2 {
+  font-size: 25px;
+}
+
+.sobre_a_loja p {
+  font-size: 12px;
+}
+
+.produtos h2 {
+  font-size: 25px;
+}
+
+.lista-produtos li {
+  max-width: 100%;
+}
+
+.lista-produtos p {
+  font-size: 18px;
+  margin-right: 40px;
+}
+
+.lista-produtos button {
+  margin-left: 0;
+  width: 100%;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.lista-produtos h3 {
+  font-size: 24px;
+}
+
+
+.lista-produtos img {
+  margin-top: 40px;
+  height: 350px;
+  max-width: 100%;
+}
+
+.lista-produtos button {
+  padding: 9px;
+  font-size: 14px;
+}
+
+.container-flex {
+  display: block;
+}
+
+footer {
+  align-items: center;
+  margin-top: 100px;
+  background-color: #4b0081;
+  color: #fff;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0 auto;
+  font-family: Poppins;
+  font-size: 13px
+}
+
+footer .p2 {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+  
+}
+/* VISÃO MOBILE - FIM */
