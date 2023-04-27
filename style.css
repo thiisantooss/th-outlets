@@ -194,7 +194,8 @@ header .container li a {
 }
 
 .sobre_a_loja img {
-  height: 550px;
+  height: 610px;
+  max-width: 100%;
 }
 
 .sobre {
@@ -300,7 +301,7 @@ header .container li a {
 }
 
 .sobre_a_loja img {
-  height: 253px;
+  max-width: 100%;
 }
 
 .sobre {
